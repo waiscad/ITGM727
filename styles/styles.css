@@ -1,0 +1,164 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400 !important;
+  color: #4D4D4D;
+  font-size: 1.6rem;
+  line-height: 1.875;
+  background-color: #DFEBF0 !important; }
+
+* {
+  box-sizing: border-box; }
+
+.container {
+  margin: auto;
+  width: 100%;
+  text-align: center; }
+
+.wrapper {
+  /*display: flex;*/
+  text-align: center;
+  /*justify-content: center;*/
+  margin: auto;
+  padding: 0;
+  width: 95%; }
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 70%; } }
+.logo {
+  text-align: center;
+  width: 30rem;
+  height: 7.3rem;
+  background-image: url("../images/signs-and-stones2x.png");
+  position: relative;
+  margin: 4rem auto 6rem auto; }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .logo {
+    width: 35.8rem;
+    height: 8.9rem;
+    background-repeat: no-repeat;
+    background-size: 35.8rem 8.9rem; } }
+@media only screen and (max-device-width: 480px) {
+  .logo {
+    width: 30rem;
+    height: 7.3rem;
+    background-size: 30rem 7.3rem; } }
+form {
+  width: 35.8rem; }
+  form .namefield {
+    width: 100%; }
+    form .namefield .input {
+      width: 100%;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400 !important;
+      color: #4D4D4D;
+      font-size: 1.6rem;
+      line-height: 1.875;
+      border-radius: 0.2rem;
+      border: 0.1rem solid #CCCCCC;
+      padding: 0.5rem 2rem 0.5rem 2rem;
+      background-color: #ffffff;
+      margin: 0 0 2rem 0; }
+  form .birthdayfields {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+    form .birthdayfields .select {
+      width: 100%; }
+      form .birthdayfields .select select {
+        width: 100%;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400 !important;
+        color: #4D4D4D;
+        font-size: 1.6rem;
+        line-height: 1.875;
+        border-radius: 0.2rem;
+        border: 0.1rem solid #CCCCCC;
+        padding: 0.5rem 4rem 0.5rem 2rem;
+        background-color: #ffffff;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='11' height='6' viewBox='0 0 11 6'><polyline fill='none' stroke='%232a2a2a' stroke-width='1.5' points='20 21 24.5 17 29 21' transform='rotate(-180 15 11)'/></svg>");
+        background-position: right 10px center;
+        background-repeat: no-repeat;
+        outline: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none; }
+      form .birthdayfields .select.birthmonth {
+        margin-right: 1rem; }
+
+@media only screen and (max-device-width: 480px) {
+  form {
+    width: 95%; } }
+.button {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700 !important;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  line-height: 1.875;
+  color: #FFFFFF;
+  background-color: #4B7796;
+  border-color: #4B7796;
+  padding: .6rem 3rem;
+  border-radius: 0.8rem;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  text-decoration: none; }
+  .button:active, .button:focus, .button:hover {
+    background-color: #436a85 !important;
+    border-color: #436a85 !important; }
+
+.content {
+  text-align: center; }
+  .content .name {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700 !important;
+    color: #4D4D4D;
+    font-size: 2rem;
+    line-height: 1;
+    text-transform: capitalize; }
+  .content .label {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700 !important;
+    color: #E2680F;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: 1.6rem;
+    line-height: 1;
+    margin: 4rem 0 1.5rem 0; }
+  .content .data {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100 !important;
+    color: #4D4D4D;
+    font-size: 4rem;
+    line-height: 1; }
+
+.center {
+  width: 35rem;
+  text-align: center;
+  margin: 4rem auto 0 auto; }
+  .center .button {
+    padding: .6rem 3rem; }
+
+@media only screen and (max-device-width: 480px) {
+  .center {
+    width: 95%; } }
+.credit {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700 !important;
+  color: #8FBCD0;
+  font-size: 1.2rem;
+  line-height: 1.875;
+  margin-top: 2rem; }
+  .credit a {
+    text-decoration: none;
+    color: #8FBCD0; }
+
+/*# sourceMappingURL=styles.css.map */

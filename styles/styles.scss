@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%; 
+}
+
+body {
+  @include body-font;
+  background-color: $skyblue !important; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+
+.wrapper {
+  /*display: flex;*/
+  text-align: center;
+  /*justify-content: center;*/
+  margin: auto;
+  padding: 0;
+  width: 95%;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 70%;
+  }
+}
+
+
+
+.logo {
+  text-align: center;
+  width: 30rem;
+  height: 7.3rem;
+  background-image: url("../images/signs-and-stones2x.png") ; 
+  position: relative;
+  margin: 4rem auto 6rem auto;
+}  
+
+
+@media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi)  { 
+  .logo {
+    width: 35.8rem;
+    height: 8.9rem;
+    background-repeat: no-repeat;
+    background-size: 35.8rem 8.9rem;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .logo {
+    width: 30rem;
+    height: 7.3rem;
+    background-size: 30rem 7.3rem;
+  }
+}
+
+
+form {
+  width: 35.8rem;
+  .namefield {
+    width: 100%;
+    .input {
+      width: 100%;
+      @include body-font;
+      border-radius: 0.2rem;
+      border: 0.1rem solid $lightgray;
+      padding: 0.5rem 2rem 0.5rem 2rem;
+      background-color: #ffffff; 
+      margin: 0 0 2rem 0;
+    }
+  }
+  .birthdayfields {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .select {
+      width: 100%;
+      select {
+        width: 100%;
+        @include body-font;
+        border-radius: 0.2rem;
+        border: 0.1rem solid $lightgray;
+        padding: 0.5rem 4rem 0.5rem 2rem;
+        background-color: #ffffff;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='11' height='6' viewBox='0 0 11 6'><polyline fill='none' stroke='%232a2a2a' stroke-width='1.5' points='20 21 24.5 17 29 21' transform='rotate(-180 15 11)'/></svg>");
+        background-position: right 10px center;
+        background-repeat: no-repeat;
+        outline: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none; 
+      }
+      &.birthmonth {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  form {
+    width: 95%;
+  }
+} 
+
+
+.button {
+  width: 100%;
+  @include button-font;
+  color: $white;
+  background-color: $blue;
+  border-color: $blue;
+  padding: .6rem 3rem;
+  border-radius: 0.8rem;
+  border: 0;
+  cursor: pointer;
+  outline:none;
+  -webkit-appearance: none;
+  text-decoration: none;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($blue, 5%) !important;
+    border-color: darken($blue, 5%) !important;
+  }
+}
+
+.content {
+  text-align: center;
+  .name {
+    @include name-font;
+    text-transform: capitalize;;
+  }
+
+  .label {
+    @include label-font;
+    margin: 4rem 0 1.5rem 0;
+  }
+
+  .data {
+    @include data-font;
+  }
+
+}
+
+.center {
+  width: 35rem;
+  text-align: center;
+  margin: 4rem auto 0 auto;
+  .button {
+    padding: .6rem 3rem;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .center {
+    width: 95%;
+  }
+} 
+
+.credit {
+  @include credit-font;
+  margin-top: 2rem;
+  a {
+    text-decoration: none;
+    color: $lightblue;
+  }
+}
+
+
+
